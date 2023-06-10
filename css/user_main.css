@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+h1 {
+    position: relative;
+    bottom: 60px;
+    font-size: 50px;
+    color: #3026deab;
+    letter-spacing: 2px;
+}
+
+p {
+    position: relative;
+    bottom: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #4646a0ab;
+    /* 글자의 자간 설정 */
+    letter-spacing: 1px;
+}
+
+
+button {
+    width: 450px;
+    height: 75px;
+    border-radius: 10px;
+    border: 1px solid #9b9c96;
+    font-size: 25px;
+    background-color: #5555f1ab;
+    color: white;
+    padding-left: 40px; 
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+
+/* 이미지를 경로를 통해 가져온 뒤, 크기 및 위치 설정 */
+
+.reserve_btn {
+    background-image: url("../img/reserve.png");
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: 32% center;
+}
+
+.reserve_info_btn {
+    background-image: url("../img/user_reserve_info.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 32% center; 
+    
+}
+
+.hospital_btn {
+    background-image: url("../img/hospital.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 32% center;
+}
+
+.user_btn {
+    background-image: url("../img/user.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 32% center;
+}
+
+.logout_btn {
+    background-image: url("../img/logout.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 32% center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    button {
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .reserve_btn {
+        background-image: url("../img/reserve.png");
+        background-repeat: no-repeat;
+        background-size: 28px 28px;
+        background-position: 32% center;
+    }
+    
+    .reserve_info_btn {
+        background-image: url("../img/user_reserve_info.png");
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+        background-position: 32% center; 
+        
+    }
+    
+    .user_btn {
+        background-image: url("../img/user.png");
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+        background-position: 32% center;
+    }
+    
+    .logout_btn {
+        background-image: url("../img/logout.png");
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 32% center;
+    }
+}

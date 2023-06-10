@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 65vw;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+}
+
+input {
+    position: relative;
+    bottom: 2vw;
+    width: 96%;
+    height: 45px;
+    padding: 5px;
+    border: 1px solid#9b9c96;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+input:focus {
+    border-color: black;
+}
+
+
+h1 {
+    position: relative;
+    bottom: 5vw;
+    font-size: 50px;
+    color: #3026deab;
+}
+
+h4 {
+    position: relative;
+    bottom: 2vw;
+    right: 42%;
+    font-size: 20px;
+    color: #3026deab;
+}
+
+button {
+    font-family: 'Gowun Dodum', sans-serif;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #9b9c96;
+    background-color: #5555f1ab;
+    color: white;
+}
+
+.line_or:after, .line_or:before {
+    display: inline-block;
+    width: calc(50% - 6%);
+    height: 1px;
+    margin: 10px 0;
+    background-color: black;
+    vertical-align: top;
+    content: "";
+}
+
+.login_btn {
+    position: relative;
+    bottom: 3vw;
+    width: 450px;
+}
+
+.non_user_reserve_btn {
+    width: 220px;
+    position: relative;
+    top: 20px;
+}
+
+.non_user_check_btn {
+    width: 220px;
+    position: relative;
+    top: 20px;
+}
+
+a {
+    position: relative;
+    bottom: 1vw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #000000b5
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+    h4 {
+        position: relative;
+        font-size: 15px;
+
+    }
+    input {
+        width: 350px;
+        height: 45px;
+    }
+    .login_btn {
+        width: 350px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .non_user_check_btn {
+        width: 170px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .non_user_reserve_btn {
+        width: 170px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .line_or:after, .line_or:before {
+        display: inline-block;
+        width: calc(50% - 8%);
+        height: 1px;
+        margin: 10px 0;
+        background-color: black;
+        vertical-align: top;
+        content: "";
+    }
+    a {
+        font-size: 15px;
+    }
+}

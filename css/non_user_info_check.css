@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #3026deab;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid  #ccc;
+    background-color: #fff; 
+    outline: none;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+input:focus {
+    border-bottom-color: #000000;
+}
+
+#name {
+    width: 100%;
+    height: 50px;
+}
+
+#jumin1, #jumin2 {
+    width: 48%;
+    height: 50px;
+}
+
+#phone, #phone1, #phone2 {
+    width: 151px;;
+    height: 50px;
+}
+
+
+button {
+    width: 450px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #5555f1ab;
+    color: white;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    #name {
+        width: 350px;
+        height: 45px;
+    }
+    
+    #jumin1, #jumin2 {
+        width: 168px;
+        height: 45px;
+    }
+
+    #phone, #phone1, #phone2 {
+        width: 107px;
+        height: 45px;
+    }
+
+    button {
+        position: relative;
+        bottom: 25px;
+        width: 350px;
+        height: 50px;
+        font-size: 15px
+    }
+}

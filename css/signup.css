@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: #3026deab;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+button {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+#name{
+    width: 500px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#id {
+    width: 350px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#id_check_btn {
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #9b9c96;
+    background-color: #3026deab;
+    color: white;
+}
+
+#pw, #pwc {
+    width: 500px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#jumin1, #jumin2 {
+    width: 240px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#phone, #phone1, #phone2 {
+    width: 151px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#sign_up_btn {
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #9b9c96;
+    background-color: #3026deab;
+    color: white;
+}
+
+.success {
+    border-bottom: 1px solid #45ff45c9;
+}
+
+.fail {
+    border-bottom: 1px solid #ff3b3bd9;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #name {
+        width: 350px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #id {
+        width: 220px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #id_check_btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-size: 15px;
+    }
+
+    #pw, #pwc {
+        width: 350px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    #jumin1, #jumin2 {
+        width: 163px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    #phone, #phone1, #phone2 {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #sign_up_btn {
+        width: 350px;
+        height: 45px;
+        font-size: 15px;
+    }
+}

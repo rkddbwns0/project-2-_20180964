@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+h1 {
+    position: relative;
+    bottom: 15px;
+    font-size: 50px;
+    color: #3026deab;
+}
+
+input {
+    font-size: 20px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid  #ccc;;
+    background-color: #fff;   
+    font-family: 'Gowun Dodum', sans-serif; 
+}
+
+input:focus {
+    border-bottom-color: black;
+}
+
+#hospital {
+    position: relative;
+    width: 400px;
+    bottom: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#name {
+    width: 400px;
+    height: 35px;
+}
+
+#jumin1, #jumin2 {
+    width: 192px;
+    height: 35px;
+}
+
+#phone, #phone1, #phone2 {
+    width: 122px;
+    height: 35px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    outline: none;
+    resize: none;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+textarea:focus {
+    border-color: black;
+}
+
+#date {
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    outline: none;
+}
+
+#date:focus {
+    border-color: black;
+}
+
+select {
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    appearance: none;   
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+select option[disabled] {
+    display: none;
+}
+
+select:focus {
+    border-color: black;
+}
+
+option {
+    font-size:18px;
+}
+
+button {
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid#ccc;
+    background-color: #5555f1ab;
+    color: white;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #name {
+        width: 350px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    #jumin1, #jumin2 {
+        width: 165px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    #phone, #phone1, #phone2 {
+        width: 105px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    #hospital {
+        font-size: 20px;
+    }
+
+    select {
+        font-size: 15px;
+        width: 350px;
+        height: 45px;
+    }
+
+    option {
+        font-size: 15px;
+    }
+
+    textarea {
+        width: 350px;
+        height: 150px;
+        font-size: 15px;
+    }
+
+    #date {
+        font-size: 15px;
+        width: 350px;
+        height: 45px;
+    }
+
+    button {
+        position: relative;
+        bottom: 18px;
+        width: 350px;
+        height: 45px;
+        font-size: 15px;
+    }
+}

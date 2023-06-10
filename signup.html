@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html labg = "ko-KR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = "text/javascript" src = "../js/signup_check.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel = "stylesheet" href = "../css/signup.css">
+
+        <script>
+                $(document).ready(function() {
+                    $('#id_check_btn').click(function(event){
+
+                        event.preventDefault();
+
+                        var id = $('#id').val();
+
+                        if (id === "") {
+                            alert("아이디를 입력하세요.");
+                            document.getElementById("id").focus();
+                            return false;
+                        }
+
+                        $.ajax({
+                            url: 'IDcheck.php',
+                            method: 'post',
+                            data: {id: id},
+                            dataType: 'json',
+                            success: function(response) {
+                                if(response.available) {
+                                    alert("사용 가능한 아이디입니다.");
+                                    $('#id').addClass('success');
+                                    $('#id').removeClass('fail');
+                                } 
+                                else {
+                                    alert("이미 사용 중인 아이디입니다.");
+                                    // input 태그의 id가 id인 입력 필드에 추가
+                                    $('#id').addClass('fail');
+                                    // input 태그의 id가 id인 입력 필드에 삭제
+                                    $('#id').removeClass('success');                                    
+                                }
+                            },
+
+                            error: function(e) {
+                                alert("");
+                            }
+
+                        });
+                    });
+                });
+        </script>
+
+        <title>회원가입</title>
+    </head>
+
+    <body>
+        <form action = "signup_check.php" method = "post" enctype = "multipart/form-data" name = "signup_form">
+            <div class = "signup_form">
+                <h1>회원가입</h1>
+                
+                <br>
+
+                <div class = "name_txt">
+                    <input type = "text" id = "name" name = "name" placeholder = "이름">
+                </div>
+
+                <br>
+
+                <div class = "id_txt">
+                    <input type = "text" id = "id" name = "id" placeholder = "아이디">
+                    <button type = "button" id = "id_check_btn"><b>중복확인</b></button>
+                </div>
+
+                <br>
+
+                <div class = "pw_txt">
+                    <input type = "password" id ="pw" name = "pw" placeholder = "비밀번호">
+                </div>
+              
+                <br>
+
+                <div class = "pwc_txt">
+                    <input type = "password" id = "pwc" name = "pwc" placeholder = "비밀번호 확인">
+                </div>
+
+                <br>
+
+                <input type = "text" id = "jumin1" name = "jumin1" placeholder = "주민 번호 6자리" maxlength = "6"> - <input type = "password" id = "jumin2" name = "jumin2" placeholder = "주민 번호 7자리" maxlength = "7">
+                
+                <br><br>
+
+                <input type = "text" id = "phone" name = "phone" placeholder="연락처" maxlength="3"> - <input type = "text" id = "phone1" name = "phone1" maxlength="4"> - <input type = "text" id = "phone2" name = "phone2" maxlength="4">
+
+                <br>
+
+                <button id = "sign_up_btn" type = "button" onclick="signup_Check()"><b>회원가입</b></button>
+            </div>
+        </form>
+    </body>
+</html>
