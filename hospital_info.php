@@ -11,9 +11,9 @@
             $id = $_SESSION['id'];
 
             $host = "localhost";
-            $user = "kyj";
-            $pw = "1234";
-            $dbname = "proj";
+            $user = "";
+            $pw = "";
+            $dbname = "";
             $mysqli = new mysqli($host, $user, $pw, $dbname); 
 
             $idSql = "select * from reserve where id = '$id'";
@@ -36,7 +36,7 @@
             <div id = "map">
                 <h1>병원 찾기</h1>
             </div>
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16589273775f26d16dbf61e5098241e7&libraries=services,clusterer"></script>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?"></script>
             <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                     mapOption = { 
